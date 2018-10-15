@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+ body {
+     margin: 0;
+ }
+
+ .frontcontain {
+     display: flex;
+     flex-direction: row;
+     font-family: 'Open Sans', sans-serif;
+     flex-wrap: nowrap;
+ }
+
+.imagemfront {
+    background-image: url("frontimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 65%;
+    position: fixed;
+}
+
+.imagemcontainer {
+    height: 100vh;
+    width: 65%;
+    overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+    .imagemcontainer {
+        display: none;
+    }
+    .imagemfront {
+        display: none;
+    }
+    .frontcontain {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+    .loginfront {
+        margin: 0;
+    }
+}
+
+.loginfront {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5%;
+    margin-left: 4%;
+    width: 15%;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titlefrontlogin {
+    height: 10%;
+    margin-top: 15%;
+    font-size: 250%;
+}
+
+.titlefrontcadastro {
+    height: 10%;
+    margin-top: 0;
+    font-size: 250%;
+}
+
+.labellogin {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 90%;
+}
+
+.inputlogin {
+    width: 180%;
+    padding: 12px;
+    outline: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.submitlogin {
+    border: 1px solid #39cc6c;
+    border-radius: 4px;
+    width: 180%;
+    padding: 14px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #39cc6c;
+    color: white;
+}
+
+.submitlogin:hover {
+    background-color: #4ADD7D;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cadastroredir {
+    border: 1px solid #39cc6c;
+    border-radius: 4px;
+    width: 180%;
+    padding: 14px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    color: #39cc6c;
+}
+
+.cadastroredir:hover {
+    border-color: #069949;
+    color: #069949;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.breaklinelogin {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    width: 180%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.breaklinecadastro {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    width: 180%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
